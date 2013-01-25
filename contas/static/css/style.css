@@ -1,0 +1,52 @@
+#tudo{
+    position: absolute;
+    width: 768px;
+    left: 50%;
+    margin: 20px 0 20px -390px;
+}
+
+h2{
+    font-style: italic;
+}
+
+#menu {
+    /*clear: both;*/
+    /*overflow: hidden;*/
+    background-color: #47a;
+    /*margin-top: 10px;*/
+    height: 26px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    font-family: courier "Courier New";
+}
+
+#menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu ul li {
+    float: left;
+    list-style: none;
+    padding: 5px;
+}
+
+#menu ul li a:link, #menu ul li a:visited, #menu ul li a:active {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+#menu ul li a:hover {
+    background-color: #79b;
+    color: white;
+}
+
+.formEntrar{
+    font-size: 13px;
+    background-color: #f1f1f1;
+    font-family: Arial;
+    font-weight: bold;
+    width: 335px;
+}

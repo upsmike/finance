@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block titulo %}{% trans "Entrar" %} - {{ block.super }}{% endblock %}
+
+{% block h1 %}{% trans "Entrar" %}{% endblock %}
+
+{% block conteudo %}{{ block.super }}
+
+    <!--<form method="post">
+        <table class="formEntrar">
+
+            {{ form }}
+
+            {% csrf_token %}
+
+            <input type="text" name="username">
+
+
+            <tr>
+                <th>&nbsp;</th>
+                <td><input type="submit" value="{% trans "Entrar" %}"/></td>
+            </tr>
+        </table>
+    </form>-->
+    <form method="post">
+        <div class="formEntrar">
+            <div style="width: 283px; height: 250px; padding: 20px 25px 15px; border: 1px solid #e5e5e5; margin: 12px 0 0;">
+                <div style="margin: 0 0 1.5em;">
+                    <label class="" for="id_username" style="display: block;">Usuário </label>
+                    <input id="id_username" type="text" name="username" maxlength="30" style="padding: 0px 8px; display: block; border: 1px solid #d9d9d9; height: 30px; width: 265px; background: #fffafa;"/>
+                </div>
+                <div style="margin: 0 0 1.5em;">
+                    <label for="id_password" style="display: block;">Senha </label>
+                    <input type="password" name="password" id="id_password" style="padding: 0px 8px; display: block; border: 1px solid #d9d9d9; height: 30px; width: 265px; background: #fffafa;"/>
+                </div>
+                <div>
+                    <input type="submit" value="Entrar" style="font-weight: bold; border: 1px solid #d9d9d9; height: 35px; width: 150px; background: #7799bb; color: white;"/>
+                </div>
+                <div style='display:none'>
+                    <input type='hidden' name='csrfmiddlewaretoken' value='UTPRCKr0dA4tz6xfyYE28kGGnt9mSLzc' />
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock conteudo %}
